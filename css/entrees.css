@@ -44,7 +44,7 @@ header {
     width: 190px;
 }
 
-#horsdoeuvres {
+#entrees {
     margin-top: 40em;
     margin-left: auto;
     margin-right: auto;
@@ -85,7 +85,7 @@ header {
     background-color: #f4f4f4;
 }
 
-#salads {
+#seafood {
     border-top: 1px solid #dedddd;
     margin-left: auto;
     margin-right: auto;
@@ -113,12 +113,12 @@ footer {
 }
 
 @media screen and (min-width: 769px) {
-    #horsdoeuvres {
+    #entrees {
         margin-top: 0;
         opacity: .9;
     }
     
-    #salads {
+    #seafood {
         margin-top: 0;
         opacity: .9;
     }
