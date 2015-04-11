@@ -37,4 +37,8 @@ $(document).ready( function() {
 );
     $(".mm-menu").trigger("open");
     $(".mm-menu").trigger("close");
+
+//backstretch plugin //
+    $.backstretch("img/ratatouille_3.jpg");
+
 });

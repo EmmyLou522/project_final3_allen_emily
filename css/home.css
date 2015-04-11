@@ -13,14 +13,13 @@ header {
     width: 32px;
     float: left;
     margin: 20px;
-    margin-right: 3.5em;
 }
 
 #logo {
-    width: 100%;
+    width: 190px;
+    margin: auto;
 }
 
 #logo img {
     width: 190px;
-    margin-left: auto;
 }
