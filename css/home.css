@@ -1,7 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 * {
     margin: 0;
     border: 0;
     padding: 0;
+}
+
+@font-face {
+    font-family: headingFont;
+    src: url(fonts/slm_everlie.otf);
+}
+
+body {
+    font-family: "ff-good-headline-web-pro-con", sans-serif;
 }
 
 header {
@@ -12,7 +31,8 @@ header {
 #hamburgericon {
     width: 32px;
     float: left;
-    margin: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 #logo {
@@ -22,4 +42,100 @@ header {
 
 #logo img {
     width: 190px;
+}
+
+#dishoftheday {
+    text-align: center;
+    width: 100%;
+    padding-top: 7em;
+}
+
+#dishoftheday h1 {
+    font-family: headingFont;
+    font-size: 55px;
+    color: white;
+    text-shadow: 2px 2px #494949;
+    padding-bottom: .5em;
+}
+
+#dishoftheday p {
+    color: white;
+    text-shadow: 2px 2px #494949;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+#dishoftheday a {
+    text-decoration: none;
+}
+
+#dishoftheday p:hover {
+    color: #85adb4;
+}
+
+#additionalinfo {
+    width: 100%;
+    height: 13em;
+    background-color: white;
+    margin-top: 14em;
+    padding-top: 3em;
+    opacity: 0.75;
+}
+
+#phone {
+    width: calc(100% / 2);
+    font-size: 15px;
+    font-weight: 200;
+    float: left;
+    padding-left: 1em;
+    box-sizing: border-box;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+#hours {
+    width: calc(100% / 2);
+    font-size: 15px;
+    font-weight: 200;
+    float: right;
+    padding-left: 1em;
+    box-sizing: border-box;
+    padding-bottom: 1em;
+}
+
+#additionalinfo article:nth-last-of-type(1) {
+    background-color: #424242;
+    opacity: 1.0;
+}
+
+#reservationlink {
+    width: 75%;
+    background-color: #424242;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    text-shadow: 2px 2px #494949;
+    font-weight: 300;
+    clear: left;
+    margin: auto;
+    padding-top: 16px;
+}
+
+#reservationlink a {
+    color: white;
+    text-decoration: none;
+}
+
+#reservationlink a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #424242;
+    color: white;
+    width: 100%;
+    height: 75px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 3em;
 }
