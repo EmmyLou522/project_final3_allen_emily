@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: headingFont;
+    src: url(fonts/slm_everlie.otf);
+}
+
+body {
+    font-family: "ff-good-headline-web-pro-con", sans-serif;
+}
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    padding-top: 15px;
+    text-align: center;
+    background: #85adb4;
+    color: #fff;
+    text-decoration: none;
+    font-family: bodyFont;
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 0.6;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+#scrollUp:hover {
+    opacity: 1.0;
+}
+
+header {
+    height: 100px;
+    background-color: white;
+}
+
+#hamburgericon {
+    width: 32px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#logo {
+    width: 190px;
+    margin: auto;
+}
+
+#logo img {
+    width: 190px;
+}
+
+#order {
+    margin-top: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-align: center;
+    max-width: 700px;
+}
+
+.sectionheading {
+    padding-bottom: 1em;
+}
+
+form {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 5em;
+    padding-bottom: 3em;
+}
+
+input {
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #424242;
+    color: white;
+    width: 100%;
+    height: 75px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 3em;
+}
+
+/* desktop */
+@media screen and (min-width:769px) {
+    header {
+        height: 110px;
+    }
+    
+    #logo {
+        width: 245px;
+        margin: auto;
+    }
+    
+    #logo img {
+        width: 245px;
+    }
+    
+    #order {
+        margin-top: 0;
+        opacity: .9;
+    }
+    
+}

@@ -68,7 +68,7 @@ header {
 #dishoftheday {
     text-align: center;
     width: 100%;
-    padding-top: 7em;
+    padding-top: 9em;
 }
 
 #dishoftheday h1 {
@@ -149,6 +149,7 @@ header {
     font-weight: 300;
     margin: auto;
     padding-top: 16px;
+    padding-bottom: 1em;
 }
 
 #reserveatable {
@@ -158,6 +159,7 @@ header {
     height: 250px;
     margin: auto;
     text-align: center;
+    max-width: 300px;
 }
 
 #reserveatable h1 {
@@ -250,4 +252,45 @@ footer {
     font-size: 12px;
     text-align: center;
     padding: 3em;
+    border-top: 1px solid #4a4949;
+}
+
+/* desktop */
+@media screen and (min-width:769px) {
+    header {
+        height: 110px;
+    }
+    
+    #hamburgericon {
+        visibility: hidden;
+    }
+    
+    #menu ul {
+        margin: auto;
+        visibility: visible;
+        display: inline;
+    }
+    
+    #menu ul li {
+        visibility: visible;
+        display: inline;
+        color: black;
+    }
+    
+    #logo {
+        width: 245px;
+        margin: auto;
+    }
+
+    #logo img {
+        width: 245px;
+    }
+    
+    #dishoftheday {
+        padding-top: 12em;
+    }
+    
+    #dishoftheday h1 {
+        font-size: 75px;
+    }
 }

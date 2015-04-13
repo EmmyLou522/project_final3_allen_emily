@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gusteau's French Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css">
+    <link rel="icon" type="image/png" href="img/fleurdelis_favicon.png">
+    <script src="//use.typekit.net/dir2dqq.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+    <header><a href="#menu"><img id="hamburgericon" src="img/menu7.png" alt="menu button"></a>
+        <nav id="menu">
+            <ul>
+                <li><a href="horsdoeuvres.html">Hors D'oeuvres</a></li>
+                <li><a href="entrees.html">Entrees</a></li>
+                <li><a href="desserts.html">Desserts</a></li>
+                <li><a href="wines.html">Wines</a></li>
+                <li><a href="index.html#reservationlinks">Make a Reservation</a></li>
+                <li><a href="order.html">Order Out</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <a href="index.html"><img src="img/GusteausLogo.png" alt="logo"></a>
+        </div>
+    </header>
+    <section id="order">
+        <h1 class="sectionheading">Place an Order to Go</h1>
+            <form>
+                <label>Select Your Hors D'oeuvres<select name="appetizer" size=1 multiple>
+                    <option value="pate">Paté Maison et Condiments - 9.95</option>
+                    <option value="onionsoup">Gratinée des Halles - 8.95</option>
+                    <option value="soupdujour">Soupe du Jour - 8.00</option>
+                    <option value="bisque">Bisque de Homard au Cognac - 8.95</option>
+                    <option value="escargots">Escargots Bourguignonne - 9.95</option>
+                    <option value="salmonfume">Saumon Fume - 14.50</option>
+                    <option value="foiegras">Foie Gras Frais - 19.95</option>
+                    <option value="tartare">Steak Tartare - 14.75</option>
+                    <option value="musselsapp">Moules Marinieres - 13.75</option>
+                    <option value="antipasto">Antipasto à la Française - 13.95</option>
+                    <option value="scandsalmon">Assiette Scandinave - 14.50</option>
+                </select></label>
+                <br>
+                <label>Select Your Salad<select name="salad" size=1 multiple>
+                    <option value="mixed">Salade de Saison Mixte - 7.95</option>
+                    <option value="chevre">Salade de Chêvre Chaud - 9.75</option>
+                    <option value="betraves">Salade de Betraves - 9.75</option>
+                    <option value="poires">Salade aux Poires - 9.75</option>
+                    <option value="chef">Salade de Chef - 9.75</option>
+                    <option value="gusteau">Salade Gusteau - 18.50</option>
+                </select></label>
+                <br>
+                <label>Select Your Entrées<select name="entree" size=1 multiple>
+                    <option value="steakfrites">*Steak, Frites - 29.95</option>
+                    <option value="canard">*Magret de Canard - 26.95</option>
+                    <option value="volaille">*Suprême de Volaille Grillé - 22.95</option>
+                    <option value="agneau">Gigot d'Agneau - 26.95</option>
+                    <option value="boeuf">Boeuf Bourguignon - 23.95</option>
+                    <option value="risotto">Risotto du Jour - 23.95</option>
+                    <option value="ratatouille">Remy's Ratatouille - 23.95</option>
+                </select></label>
+                <br>
+                <label>Select Your Desserts<select name="desserts" size=1 multiple>
+                    <option value="souffle">Souffle (2) - 20.00</option>
+                    <option value="bellehelene">Poire Belle Helene - 9.95</option>
+                    <option value="profiterolles">Profiterolles au Chocolat - 7.95</option>
+                    <option value="mousse">Mousse au Chocolat - 7.50</option>
+                    <option value="patisserie">Pâtisserie - 7.50</option>
+                    <option value="brulee">Crème Brûlée Ò la Lavande - 7.50</option>
+                    <option value="fromages">Assiette de Fromages de France - 9.25</option>
+                </select></label>
+                <br>
+                <label>Date for Pickup<input type="date" name="date"></label>
+                <br>
+                <label>Pickup Time<input type="datetime" name="time">
+                    <select name="time">
+                        <option value="5:30pm">5:30pm</option>
+                        <option value="6:00pm">6:00pm</option>
+                        <option value="6:30pm">6:30pm</option>
+                        <option value="7:00pm">7:00pm</option>
+                        <option value="7:30pm">7:30pm</option>
+                        <option value="8:00pm">8:00pm</option>
+                        <option value="8:30pm">8:30pm</option>
+                        <option value="9:00pm">9:00pm</option>
+                        <option value="9:30pm">9:30pm</option>
+                    </select></label>
+                </label>
+                <input type="submit" value="Find a Table">
+            </form>
+    </section>
+    <footer>
+        <p>&copy; 2015 Gusteau's French Restaurant, Web Design by lil' e designs</p>
+    </footer>
+
+    <script src="js/jquery-2.1.3.js"></script>
+    <script src="js/sticky.jquery.js"></script>
+    <script src="js/jquery.scrollUp.js"></script>
+    <script src="js/jquery.backstretch.js"></script>
+    <script src="js/jquery.mmenu.min.all.js"></script>
+    <script src="js/order.js"></script>
+</body>
+</html>
