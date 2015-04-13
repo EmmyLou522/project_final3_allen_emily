@@ -100,6 +100,9 @@ header {
     margin-top: 20em;
     padding-top: 3em;
     border-bottom: 1px solid #4a4949;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #additionalinfo img {
@@ -142,22 +145,13 @@ header {
     color: #a30810;
 }
 
-#reservationlink {
-    width: 100%;
-    background-color: #222222;
-    text-shadow: 2px 2px #494949;
-    font-weight: 300;
-    margin: auto;
-    padding-top: 16px;
-    padding-bottom: 1em;
-}
-
 #reserveatable {
     background-color: #424242;
     border-radius: 3px;
     width: 90%;
     height: 250px;
     margin: auto;
+    margin-bottom: 1.5em;
     text-align: center;
     max-width: 300px;
 }
@@ -292,5 +286,29 @@ footer {
     
     #dishoftheday h1 {
         font-size: 75px;
+    }
+    
+    #desktopcontainer {
+        background-color: #222222;
+        margin: auto;
+        height: auto;
+        max-width: 700px;
+        overflow: auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    #infocontainer {
+        width: 300px;
+        margin-right: 3em;
+        float: left;
+    }
+    
+    #reserveatable {
+        float: right;
+    }
+    
+    footer {
+        clear: left;
     }
 }

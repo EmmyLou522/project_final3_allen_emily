@@ -91,6 +91,10 @@ header {
     width: 100px;
 }
 
+#remy h1 {
+    font-size: 15px;
+}
+
 #phoneaddressemail {
     text-align: left;
     width: 60%;
@@ -120,6 +124,18 @@ footer {
     padding-top: 3em;
 }
 
+/* tablet */
+
+@media screen and (min-width: 534px) {
+    #phoneaddressemail {
+        text-align: left;
+        width: 70%;
+        float: right;
+        padding-right: 1em;
+        padding-left: 1.5em;
+    }
+}
+
 /* desktop */
 @media screen and (min-width:769px) {
     header {
@@ -138,6 +154,5 @@ footer {
     #order {
         margin-top: 0;
         opacity: .9;
-    }
-    
+    } 
 }
