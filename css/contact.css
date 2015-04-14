@@ -66,7 +66,7 @@ header {
 }
 
 #order {
-    margin-top: 40em;
+    margin-top: 25em;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -74,7 +74,6 @@ header {
     padding-bottom: 3em;
     text-align: center;
     max-width: 700px;
-    height: 500px;
 }
 
 .sectionheading {
@@ -83,8 +82,7 @@ header {
 
 #remy {
     width: 150px;
-    margin-left: .5em;
-    float: left;
+    margin: auto;
 }
 
 #remy img {
@@ -97,14 +95,16 @@ header {
 
 #phoneaddressemail {
     text-align: left;
-    width: 60%;
-    float: left;
+    width: 100%;
+    margin: auto;
+    padding-top: 1em;
+    padding-left: 1em;
     padding-right: 1em;
+    max-width: 450px;
 }
 
 #phoneaddressemail p {
     padding-bottom: 1em;
-    padding-left: 1.5em;
 }
 
 #phoneaddressemail img {
@@ -112,6 +112,11 @@ header {
     height: 32px;
     margin-left: 1.5em;
     margin-top: 1em;
+}
+
+#social {
+    width: 140px;
+    margin: auto;
 }
 
 footer {
@@ -122,20 +127,17 @@ footer {
     font-size: 12px;
     text-align: center;
     padding-top: 3em;
+    clear: both;
 }
 
 /* tablet */
 
-@media screen and (min-width: 534px) {
+@media screen and (min-width: 400px) {
     #phoneaddressemail {
-        text-align: left;
-        width: 70%;
-        float: right;
-        padding-right: 1em;
-        padding-left: 1.5em;
+        padding-top: 2em;
     }
-}
-
+}   
+    
 /* desktop */
 @media screen and (min-width:769px) {
     header {
@@ -154,5 +156,9 @@ footer {
     #order {
         margin-top: 0;
         opacity: .9;
-    } 
+    }
+    
+    #order {
+        padding-bottom: 5em;
+    }
 }
