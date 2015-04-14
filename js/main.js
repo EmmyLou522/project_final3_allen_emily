@@ -1,9 +1,19 @@
 $(document).ready( function() {
-    //sticky plug in//
-    $('.sneakyBlock').sticky();
-    //scrollUp plug in//
-    $.scrollUp();
-    $("nav#menu").mmenu({
+    // run test on initial page load
+    checkSize();
+
+    // run test on resize of the window
+    $(window).resize(checkSize);
+});
+
+//Function to the css rule
+function checkSize(){
+    if ($(' header ').css("height") == "100px" ){
+        //backstretch plugin //
+        $.backstretch("img/ratatouille_3.jpg");
+        //scrollUp plug in//
+        $.scrollUp();
+        $("nav#menu").mmenu({
       //options
         // A collection of extension names to enable for the menu.
       extensions    : [],
@@ -37,8 +47,9 @@ $(document).ready( function() {
 );
     $(".mm-menu").trigger("open");
     $(".mm-menu").trigger("close");
-
-//backstretch plugin //
-    $.backstretch("img/ratatouille_3.jpg");
-
-});
+    } else {
+        $.backstretch("img/ratatouille_3.jpg");
+        $.scrollUp();
+    }
+    
+};

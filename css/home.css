@@ -274,18 +274,6 @@ footer {
         visibility: hidden;
     }
     
-    #menu ul {
-        margin: auto;
-        visibility: visible;
-        display: inline;
-    }
-    
-    #menu ul li {
-        visibility: visible;
-        display: inline;
-        color: black;
-    }
-    
     #logo {
         width: 245px;
         margin: auto;
