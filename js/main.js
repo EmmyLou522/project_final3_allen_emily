@@ -1,20 +1,36 @@
-$(document).ready( function() {
-    // run test on initial page load
-    checkSize();
+function createMenu() {
+    if ($('#logo').css("width") !== "190px") {
+        //Check if menu exists.  If it does, remove the current menu.
+        if (document.getElementById("menu")) {
+        //remove the current one
+        $('#menu').remove();    
+        }
+    //then, add a new one since the plugin messed up the menu.
+    $('header').append('<nav id="menu"><ul><li><a href="#">Menu</a><ul class="fallback"><li><a href="horsdoeuvres.html">Hors D\'oeuvres</a></li><li><a href="entrees.html">Entrees</a></li><li><a href="desserts.html">Desserts</a></li><li><a href="wines.html">Wines</a></li></ul></li><li><a href="index.html#reservationlinks">Make a Reservation</a></li><li><a href="order.html">Order Out</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="index.html">Home</a></li></ul></nav>');
+    //Stretch the image first.
+    $.backstretch("img/ratatouille_3.jpg");
+    //Run the jbar plugin
+    // jbar plugin
+    $('nav li ul').hide().removeClass('fallback');
+    $('nav li').hover(function () { $('ul', this).stop().slideDown(100);}, function () { $('ul', this).stop().slideUp(100); });
+    //end jbar plugin
+    }
+    //If it isn't desktop.
+    else {
+        //Check if menu exists.  If it does, remove the current menu.
+        if (document.getElementById("menu")) {
+            //remove the current one
+            $('#menu').remove();    
+        }
+        $('header').append('<nav id="menu"><ul><li><a href="#">Menu</a><ul class="fallback"><li><a href="horsdoeuvres.html">Hors D\'oeuvres</a></li><li><a href="entrees.html">Entrees</a></li><li><a href="desserts.html">Desserts</a></li><li><a href="wines.html">Wines</a></li></ul></li><li><a href="index.html#reservationlinks">Make a Reservation</a></li><li><a href="order.html">Order Out</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="index.html">Home</a></li></ul></nav>');
 
-    // run test on resize of the window
-    $(window).resize(checkSize);
-});
-
-//Function to the css rule
-function checkSize(){
-    if ($(' #logo ').css("width") == "190px" ){
-        //backstretch plugin //
-        $.backstretch("img/ratatouille_3.jpg");
-        //scrollUp plug in//
-        $.scrollUp();
-        $("nav#menu").mmenu({
-        
+    //Stretch the image first.
+    $.backstretch("img/ratatouille_3.jpg");
+    //scrollUp plug in
+    $.scrollUp();
+    //end scrollUp plugin
+    //begin navmenu plugin
+    $("nav#menu").mmenu({    
         //options
         // A collection of extension names to enable for the menu.
         extensions    : [],
@@ -44,23 +60,15 @@ function checkSize(){
         // The number of milliseconds used in the CSS transitions.
         transitionDuration: 400
         }
-        );
+    );
         
     $(".mm-menu").trigger("open");
-    $(".mm-menu").trigger("close");
-    } else {
-        $.backstretch("img/ratatouille_3.jpg");
-        $.scrollUp();
-        // jbar plugin //
-        $('nav li ul').hide().removeClass('fallback');
-        $('nav li').hover(
-            function () {
-                $('ul', this).stop().slideDown(100);
-            },
-            function () {
-            $('ul', this).stop().slideUp(100);
-            }
-         );
-         }
-    
-};
+    $(".mm-menu").trigger("close"); 
+    //end navmenu plugin
+    //Show the menu.
+    }
+}
+
+$(document).ready(function() {createMenu(); });
+
+$(window).resize(function() {createMenu(); });
