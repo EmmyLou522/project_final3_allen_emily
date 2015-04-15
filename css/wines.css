@@ -132,17 +132,89 @@ footer {
         height: 110px;
     }
     
+    #hamburgericon {
+        visibility: hidden;
+    }
+    
     #logo {
         width: 245px;
         margin: auto;
     }
-    
+
     #logo img {
         width: 245px;
     }
     
+     /* jbar plug in */
+    nav {
+        background-color: #222222;
+        padding-left: 18%;
+        overflow: auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    nav ul {
+        text-align:center;
+        margin: auto;
+        overflow: auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    nav ul li {
+        float:left;
+        display:inline;
+    }
+    
+    nav ul li:hover {
+        background: #424242;
+    }
+    
+    nav ul li a {
+        display:block;
+        padding:15px 25px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul li ul {
+        position:absolute;
+        width:110px;
+        background:#FFF;
+        opacity: 0.85;
+    }
+    
+    nav ul li ul li {
+        width:110px;
+    }
+    
+    nav ul li ul li a {
+        display:block;
+        padding:15px 10px;
+        color:#444;
+    }
+    
+    nav ul li ul li a:hover {
+        color: #38728b;
+    }
+    
+    nav ul li ul li:hover a {
+        background:#F7F7F7;
+    }
+    
+    nav ul li ul.fallback {
+        display:none;
+    }
+    
+    nav ul li:hover ul.fallback {
+        display:block;
+    }
+    
+    /* end of jbar plugin */
+    
     #wines {
-        margin-top: 0;
+        margin-top: 46px;
         opacity: .9;
     }
 }
