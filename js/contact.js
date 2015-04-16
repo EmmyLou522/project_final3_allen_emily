@@ -9,6 +9,8 @@ function createMenu() {
     $('header').append('<nav id="menu"><ul><li><a href="#">Menu</a><ul class="fallback"><li><a href="horsdoeuvres.html">Hors D\'oeuvres</a></li><li><a href="entrees.html">Entrees</a></li><li><a href="desserts.html">Desserts</a></li><li><a href="wines.html">Wines</a></li></ul></li><li><a href="index.html#reservationlinks">Make a Reservation</a></li><li><a href="order.html">Order Out</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="index.html">Home</a></li></ul></nav>');
     //Stretch the image first.
     $.backstretch("img/PierrotBistrot.jpg");
+    //scrollUp plug in
+    $.scrollUp();
     //Run the jbar plugin
     // jbar plugin
     $('nav li ul').hide().removeClass('fallback');

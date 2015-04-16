@@ -225,12 +225,42 @@ footer {
     
     /* end of jbar plugin */
     #horsdoeuvres {
-        margin-top: 46px;
+        margin-top: 49px;
         opacity: .9;
     }
     
     #salads {
         margin-top: 0;
         opacity: .9;
+    }
+}
+
+@media screen and (min-width:860px) {
+    nav {
+        padding-left: 12%;
+    }
+}
+
+@media screen and (min-width:960px) {
+    nav {
+        padding-left: 15.5%;
+    }
+}
+
+@media screen and (min-width:1060px) {
+    nav {
+        padding-left: 18.5%;
+    }
+}
+
+@media screen and (min-width:1160px) {
+    nav {
+        padding-left: 21.5%;
+    }
+}
+
+@media screen and (min-width:1437px) {
+    nav {
+        padding-left: 26.5%;
     }
 }

@@ -230,3 +230,33 @@ footer {
         height: 100%;
     }
 }
+
+@media screen and (min-width:860px) {
+    nav {
+        padding-left: 12%;
+    }
+}
+
+@media screen and (min-width:960px) {
+    nav {
+        padding-left: 15.5%;
+    }
+}
+
+@media screen and (min-width:1060px) {
+    nav {
+        padding-left: 18.5%;
+    }
+}
+
+@media screen and (min-width:1160px) {
+    nav {
+        padding-left: 21.5%;
+    }
+}
+
+@media screen and (min-width:1437px) {
+    nav {
+        padding-left: 26.5%;
+    }
+}
