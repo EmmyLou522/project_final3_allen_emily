@@ -153,23 +153,20 @@ footer {
      /* jbar plug in */
     nav {
         background-color: #222222;
-        padding-left: 18%;
         overflow: auto;
         overflow-x: hidden;
         overflow-y: hidden;
     }
     
     nav ul {
-        text-align:center;
-        margin: auto;
+        text-align: center;
         overflow: auto;
         overflow-x: hidden;
         overflow-y: hidden;
     }
     
     nav ul li {
-        float:left;
-        display:inline;
+        display: inline-block;
     }
     
     nav ul li:hover {
@@ -177,7 +174,7 @@ footer {
     }
     
     nav ul li a {
-        display:block;
+        display:inline-block;
         padding:15px 25px;
         color: white;
         text-decoration: none;
@@ -187,7 +184,8 @@ footer {
         position:absolute;
         width:110px;
         background:#FFF;
-        opacity: 0.85;
+        opacity: 0.95;
+        z-index: 999;
     }
     
     nav ul li ul li {
@@ -228,35 +226,5 @@ footer {
         margin-top: 0;
         opacity: .9;
         height: 100%;
-    }
-}
-
-@media screen and (min-width:860px) {
-    nav {
-        padding-left: 12%;
-    }
-}
-
-@media screen and (min-width:960px) {
-    nav {
-        padding-left: 15.5%;
-    }
-}
-
-@media screen and (min-width:1060px) {
-    nav {
-        padding-left: 18.5%;
-    }
-}
-
-@media screen and (min-width:1160px) {
-    nav {
-        padding-left: 21.5%;
-    }
-}
-
-@media screen and (min-width:1437px) {
-    nav {
-        padding-left: 26.5%;
     }
 }

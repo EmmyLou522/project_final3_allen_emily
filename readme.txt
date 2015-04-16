@@ -15,3 +15,5 @@ Resources:
 -http://www.fourfront.us/blog/jquery-window-width-and-media-queries
 -https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout
 -https://api.jquery.com/resize/
+-http://stackoverflow.com/questions/12444958/drop-down-menu-cuts-off-or-appears-behind-div
+-http://stackoverflow.com/questions/18329137/how-to-fix-margin-auto-when-floating-left-elements-are-involved
