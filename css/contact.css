@@ -15,12 +15,17 @@ html {
 }
 
 @font-face {
-    font-family: headingFont;
-    src: url(fonts/slm_everlie.otf);
+    font-family: subheadFont;
+    src: url('../fonts/Muli-Regular.ttf');
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url('../fonts/Muli-Light.ttf');
 }
 
 body {
-    font-family: "ff-good-headline-web-pro-con", sans-serif;
+    font-family: bodyFont;
 }
 
 #scrollUp {
@@ -112,6 +117,11 @@ header {
     height: 32px;
     margin-left: 1.5em;
     margin-top: 1em;
+}
+
+#phoneaddressemail a {
+    color: #38728b;
+    text-decoration: none;
 }
 
 #social {
@@ -226,7 +236,7 @@ footer {
     /* end of jbar plugin */
     
     #order {
-        margin-top: 46px;
+        margin-top: 49px;
         opacity: .9;
     }
     

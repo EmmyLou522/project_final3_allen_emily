@@ -15,12 +15,17 @@ html {
 }
 
 @font-face {
-    font-family: headingFont;
-    src: url(fonts/slm_everlie.otf);
+    font-family: subheadFont;
+    src: url('../fonts/Muli-Regular.ttf');
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url('../fonts/Muli-Light.ttf');
 }
 
 body {
-    font-family: "ff-good-headline-web-pro-con", sans-serif;
+    font-family: bodyFont;
 }
 
 #scrollUp {

@@ -148,7 +148,9 @@ li.mm-vertical.mm-opened > .mm-panel {
   font-size: 14px; }
   .mm-listview a,
   .mm-listview a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #85adb4;
+  }
   .mm-listview > li {
     position: relative; }
     .mm-listview > li > a,
@@ -254,7 +256,7 @@ li.mm-vertical.mm-opened > .mm-panel {
     padding-top: 25px; }
 
 .mm-menu {
-  background: #f3f3f3;
+  background: white;
   color: rgba(0, 0, 0, 0.7); }
   .mm-menu .mm-header {
     border-color: rgba(0, 0, 0, 0.1); }

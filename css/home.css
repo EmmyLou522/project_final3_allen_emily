@@ -20,27 +20,17 @@ html {
 }
 
 @font-face {
-    font-family: sectionHeading;
-    src: url('fonts/Raleway-Regular.ttf');
-}
-
-@font-face {
-    font-family: headingFont;
-    src: url('fonts/Raleway-Light.ttf');
-}
-
-@font-face {
     font-family: subheadFont;
-    src: url('fonts/Muli-Regular.ttf');
+    src: url('../fonts/Muli-Regular.ttf');
 }
 
 @font-face {
     font-family: bodyFont;
-    src: url('fonts/Muli-Light.ttf');
+    src: url('../fonts/Muli-Light.ttf');
 }
 
 body {
-    font-family: "ff-good-headline-web-pro-con", sans-serif;
+    font-family: bodyFont;
 }
 
 #scrollUp {
@@ -95,7 +85,7 @@ header {
     font-family: headingFont;
     font-size: 65px;
     color: white;
-    text-shadow: 2px 2px #494949;
+    text-shadow: 1px 1px #494949;
     padding-bottom: .5em;
 }
 
@@ -104,6 +94,7 @@ header {
     text-shadow: 2px 2px #494949;
     font-weight: 400;
     font-size: 1.5em;
+    font-family: subheadFont;
 }
 
 #dishoftheday a {
@@ -246,6 +237,7 @@ input[type="submit"] {
     color: white;
     background-color: #85adb4;
     margin-top: 2em;
+    font-family: bodyFont;
 }
 
 input[type="submit"]:hover {
