@@ -70,7 +70,7 @@ header {
     width: 190px;
 }
 
-#horsdoeuvres {
+.firstsection {
     margin-top: 25em;
     margin-left: auto;
     margin-right: auto;
@@ -111,7 +111,7 @@ header {
     background-color: #f4f4f4;
 }
 
-#salads {
+.secondsection {
     border-top: 1px solid #dedddd;
     margin-left: auto;
     margin-right: auto;
@@ -222,12 +222,12 @@ footer {
     }
     
     /* end of jbar plugin */
-    #horsdoeuvres {
+    .firstsection {
         margin-top: 49px;
         opacity: .9;
     }
     
-    #salads {
+    .secondsection {
         margin-top: 0;
         opacity: .9;
     }

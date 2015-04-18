@@ -75,13 +75,13 @@ header {
     width: 190px;
 }
 
-#dishoftheday {
+.dishoftheday {
     text-align: center;
     width: 100%;
     padding-top: 9em;
 }
 
-#dishoftheday h1 {
+.dishoftheday h1 {
     font-family: headingFont;
     font-size: 65px;
     color: white;
@@ -89,7 +89,7 @@ header {
     padding-bottom: .5em;
 }
 
-#dishoftheday p {
+.dishoftheday p {
     color: white;
     text-shadow: 2px 2px #494949;
     font-weight: 400;
@@ -97,15 +97,15 @@ header {
     font-family: subheadFont;
 }
 
-#dishoftheday a {
+.dishoftheday a {
     text-decoration: none;
 }
 
-#dishoftheday p:hover {
+.dishoftheday p:hover {
     color: #85adb4;
 }
 
-#additionalinfo {
+.additionalinfo {
     width: 100%;
     background-color: #222222;
     margin-top: 8.75em;
@@ -116,12 +116,12 @@ header {
     overflow-y: hidden;
 }
 
-#infocontainer {
+.infocontainer {
     width: 90%;
     margin: auto;
 }
 
-#additionalinfo img {
+.additionalinfo img {
     padding: .5em;
     margin-top: 1em;
 }
@@ -230,27 +230,26 @@ input[type="number"] {
     font-size: 12px;
 }
 
-input[type="submit"] {
+#submit {
     width: 70%;
     height: 30px;
     border-radius: 3px;
     color: white;
     background-color: #85adb4;
-    margin-top: 2em;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
     font-family: bodyFont;
 }
 
-input[type="submit"]:hover {
-    background-color: #38728b;
-}
-
-#reservationlink a {
+#submit p {
     color: white;
-    text-decoration: none;
+    padding-top: .5em;
+    margin: auto;
 }
 
-#reservationlink a:hover {
-    text-decoration: underline;
+#submit:hover {
+    background-color: #38728b;
 }
 
 footer {
@@ -260,18 +259,20 @@ footer {
     height: 75px;
     font-size: 12px;
     text-align: center;
-    padding: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 2em;
     border-top: 1px solid #4a4949;
 }
 
 /* tablet */
 
 @media screen and (min-width: 376px) {
-    #additionalinfo {
+    .additionalinfo {
         margin-top: 19.5em;
     } 
     
-    #dishoftheday {
+    .dishoftheday {
         padding-top: 11em;
     }
 }
@@ -361,15 +362,15 @@ footer {
     }
     /* end of plug in CSS */
     
-    #dishoftheday {
+    .dishoftheday {
         padding-top: 12em;
     }
     
-    #dishoftheday h1 {
+    .dishoftheday h1 {
         font-size: 75px;
     }
     
-    #desktopcontainer {
+    .desktopcontainer {
         background-color: #222222;
         margin: auto;
         height: auto;
@@ -379,7 +380,7 @@ footer {
         overflow-y: hidden;
     }
     
-    #infocontainer {
+    .infocontainer {
         width: 300px;
         margin-right: 3em;
         float: left;

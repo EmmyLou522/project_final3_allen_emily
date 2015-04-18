@@ -70,7 +70,7 @@ header {
     width: 190px;
 }
 
-#order {
+.order {
     margin-top: 25em;
     margin-left: auto;
     margin-right: auto;
@@ -98,7 +98,7 @@ header {
     font-size: 15px;
 }
 
-#phoneaddressemail {
+.phoneaddressemail {
     text-align: left;
     width: 100%;
     margin: auto;
@@ -108,23 +108,23 @@ header {
     max-width: 450px;
 }
 
-#phoneaddressemail p {
+.phoneaddressemail p {
     padding-bottom: 1em;
 }
 
-#phoneaddressemail img {
+.phoneaddressemail img {
     width: 32px;
     height: 32px;
     margin-left: 1.5em;
     margin-top: 1em;
 }
 
-#phoneaddressemail a {
+.phoneaddressemail a {
     color: #38728b;
     text-decoration: none;
 }
 
-#social {
+.social {
     width: 140px;
     margin: auto;
 }
@@ -136,7 +136,9 @@ footer {
     height: 75px;
     font-size: 12px;
     text-align: center;
-    padding-top: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 2em;
     clear: both;
 }
 
@@ -233,12 +235,9 @@ footer {
     
     /* end of jbar plugin */
     
-    #order {
+    .order {
         margin-top: 49px;
         opacity: .9;
-    }
-    
-    #order {
         padding-bottom: 5em;
     }
 }

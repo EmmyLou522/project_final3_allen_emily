@@ -70,7 +70,7 @@ header {
     width: 190px;
 }
 
-.wines {
+.firstsection {
     margin-top: 25em;
     margin-left: auto;
     margin-right: auto;
@@ -85,19 +85,11 @@ header {
     padding-bottom: 1em;
 }
 
-.wineheading {
-    font-size: 18px;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    border-top: 1px solid #dedddd;
-}
-
 .menuitem h1:first-child {
     text-align: left;
     padding-left: 1em;
     padding-top: .7em;
     padding-bottom: .3em;
-    font-size: 15px;
 }
 
 .menuitem p {
@@ -106,7 +98,6 @@ header {
     padding-left: 1.2em;
     width: 70%;
     font-weight: 300;
-    font-size: 13px;
 }
 
 .menuitem p:last-child {
@@ -120,6 +111,22 @@ header {
     background-color: #f4f4f4;
 }
 
+.secondsection {
+    border-top: 1px solid #dedddd;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-top: 2em;
+    text-align: center;
+    max-width: 700px;
+}
+
+#warning {
+    text-align: left;
+    padding: 1.6em;
+    font-style: italic;
+    font-size: 12px;
+}
 
 footer {
     background-color: #424242;
@@ -133,7 +140,7 @@ footer {
     padding-top: 2em;
 }
 
-/* tablet */
+/* desktop */
 @media screen and (min-width:769px) {
     header {
         height: 110px;
@@ -217,9 +224,13 @@ footer {
     }
     
     /* end of jbar plugin */
-    
-    .wines {
+    .firstsection {
         margin-top: 49px;
+        opacity: .9;
+    }
+    
+    .secondsection {
+        margin-top: 0;
         opacity: .9;
     }
 }

@@ -17,3 +17,10 @@ Resources:
 -https://api.jquery.com/resize/
 -http://stackoverflow.com/questions/12444958/drop-down-menu-cuts-off-or-appears-behind-div
 -http://stackoverflow.com/questions/18329137/how-to-fix-margin-auto-when-floating-left-elements-are-involved
+-https://api.jquery.com/submit/
+-https://api.jquery.com/click/
+-http://api.jquery.com/replacewith/
+-http://www.echoecho.com/htmlforms07.htm
+-http://www.javascripter.net/faq/rounding.htm
+
+I chose to keep the Home link to the right, because I felt the menu and the contact us sections were more important, so I wanted those starting at the left. From my perspective, I would think people visiting a restaurant’s website would want to find the hours and menu before anything else.
