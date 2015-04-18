@@ -15,12 +15,17 @@ html {
 }
 
 @font-face {
-    font-family: headingFont;
-    src: url(fonts/slm_everlie.otf);
+    font-family: subheadFont;
+    src: url('../fonts/Muli-Regular.ttf');
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url('../fonts/Muli-Light.ttf');
 }
 
 body {
-    font-family: "ff-good-headline-web-pro-con", sans-serif;
+    font-family: bodyFont;
 }
 
 #scrollUp {
@@ -49,6 +54,10 @@ header {
     background-color: white;
 }
 
+header h1 {
+    display: none;
+}
+
 #hamburgericon {
     width: 32px;
     float: left;
@@ -65,8 +74,8 @@ header {
     width: 190px;
 }
 
-#order {
-    margin-top: 40em;
+.order {
+    margin-top: 25em;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -80,21 +89,6 @@ header {
     padding-bottom: 1em;
 }
 
-form {
-    text-align: left;
-    width: 90%;
-    margin: auto;
-}
-
-label {
-    margin-bottom: 5em;
-    padding-bottom: 3em;
-}
-
-input {
-    margin-bottom: 1em;
-}
-
 footer {
     background-color: #424242;
     color: white;
@@ -102,27 +96,108 @@ footer {
     height: 75px;
     font-size: 12px;
     text-align: center;
-    padding-top: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 2em;
+    clear: both;
 }
 
+/* tablet */
+
+@media screen and (min-width: 400px) {
+    #phoneaddressemail {
+        padding-top: 2em;
+    }
+}   
+    
 /* desktop */
 @media screen and (min-width:769px) {
     header {
         height: 110px;
     }
     
+    #hamburgericon {
+        visibility: hidden;
+    }
+    
     #logo {
         width: 245px;
         margin: auto;
     }
-    
+
     #logo img {
         width: 245px;
     }
     
-    #order {
-        margin-top: 0;
-        opacity: .9;
+     /* jbar plug in */
+    nav {
+        background-color: #222222;
+        overflow: auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
     
+    nav ul {
+        text-align: center;
+        overflow: auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    nav ul li {
+        display: inline-block;
+    }
+    
+    nav ul li:hover {
+        background: #424242;
+    }
+    
+    nav ul li a {
+        display:inline-block;
+        padding:15px 25px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul li ul {
+        position:absolute;
+        width:110px;
+        background:#FFF;
+        opacity: 0.95;
+        z-index: 999;
+    }
+    
+    nav ul li ul li {
+        width:110px;
+    }
+    
+    nav ul li ul li a {
+        display:block;
+        padding:15px 10px;
+        color:#444;
+    }
+    
+    nav ul li ul li a:hover {
+        color: #38728b;
+    }
+    
+    nav ul li ul li:hover a {
+        background:#F7F7F7;
+    }
+    
+    nav ul li ul.fallback {
+        display:none;
+    }
+    
+    nav ul li:hover ul.fallback {
+        display:block;
+    }
+    
+    /* end of jbar plugin */
+    
+    .order {
+        margin-top: 49px;
+        opacity: .9;
+        padding-bottom: 5em;
+    }
 }
