@@ -54,6 +54,10 @@ header {
     background-color: white;
 }
 
+header h1 {
+    display: none;
+}
+
 #hamburgericon {
     width: 32px;
     float: left;
