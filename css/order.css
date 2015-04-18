@@ -181,12 +181,14 @@ input[type="submit"]:hover {
     font-family: bodyFont;
     padding-left: 1em;
     padding-right: 1em;
+    font-size: 12px;
 }
 
 #ordertotal p {
     font-family: bodyFont;
     padding-left: 1em;
     padding-right: 1em;
+    font-size: 12px;
 }
 
 footer {
@@ -201,14 +203,6 @@ footer {
     padding-top: 2em;
     clear: both;
 }
-
-/* tablet */
-
-@media screen and (min-width: 400px) {
-    #phoneaddressemail {
-        padding-top: 2em;
-    }
-}   
     
 /* desktop */
 @media screen and (min-width:769px) {
@@ -299,5 +293,31 @@ footer {
         margin-top: 49px;
         opacity: .9;
         padding-bottom: 5em;
+    }
+    
+    legend {
+        font-size: 17px;
+    }
+    
+    select {
+        font-size: 14px;
+        margin-top: 1em;
+    }
+    
+    label {
+        font-size: 14px;
+    }
+    
+    input[type="number"] {
+        font-size: 14px;
+        width: 35px;
+    }
+    
+    input[type="button"] {
+        font-size: 14px;
+    }
+    
+    input[type="submit"] {
+        font-size: 14px;
     }
 }
