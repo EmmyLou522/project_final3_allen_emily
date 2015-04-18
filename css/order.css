@@ -87,6 +87,106 @@ header h1 {
 
 .sectionheading {
     padding-bottom: 1em;
+    font-family: subheadFont;
+}
+
+fieldset {
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    border-top: 1px solid #999999;
+}
+
+legend {
+    text-align: center;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+    font-family: subheadFont;
+}
+
+#fullname {
+    border: 1px solid #999999;
+    border-radius: 3px;
+    height: 2em;
+    margin-bottom: 1em;
+    font-family: bodyFont;
+}
+
+#email {
+    border: 1px solid #999999;
+    border-radius: 3px;
+    height: 2em;
+    margin-bottom: 1em;
+    font-family: bodyFont;
+}
+
+#phone {
+    border: 1px solid #999999;
+    border-radius: 3px;
+    height: 2em;
+    margin-bottom: 1em;
+    font-family: bodyFont;
+}
+
+label {
+    font-size: 12px;
+    padding-right: 1em;
+}
+
+select {
+    font-family: bodyFont;
+}
+
+input[type="number"] {
+    width: 30px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    font-family: bodyFont;
+}
+
+input[type="button"] {
+    background-color: #38728b;
+    border-radius: 3px;
+    color: white;
+    height: 2em;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-top: 1em;
+    font-family: bodyFont;
+}
+
+input[type="button"]:hover {
+    background-color: #85adb4;
+}
+
+input[type="submit"] {
+    background-color: #38728b;
+    border-radius: 3px;
+    color: white;
+    height: 2em;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-top: 1em;
+    font-family: bodyFont;
+    margin: auto;
+}
+
+input[type="submit"]:hover {
+    background-color: #85adb4;
+}
+
+#orderreview p {
+    font-family: bodyFont;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#ordertotal p {
+    font-family: bodyFont;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 footer {
